@@ -68,6 +68,7 @@ public class BylineImpl implements Byline {
     private Image image;
 
     // Add a logger for any errors
+    @SuppressWarnings("unused")
     private static final Logger LOGGER = LoggerFactory.getLogger(BylineImpl.class);
 
     @PostConstruct

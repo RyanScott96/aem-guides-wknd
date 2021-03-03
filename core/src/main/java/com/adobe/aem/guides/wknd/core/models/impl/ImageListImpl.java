@@ -101,6 +101,7 @@ public class ImageListImpl implements ImageList {
     private List<ImageList.ListItem> imageListItems;
 
     @Override
+    @SuppressWarnings("unchecked")
     public final Collection<ImageList.ListItem> getListItems() {
         if (imageListItems == null) {
             if (coreList == null) {
@@ -297,6 +298,7 @@ public class ImageListImpl implements ImageList {
         }
 
         @Override
+        @SuppressWarnings("unchecked")
         public <AdapterType> AdapterType adaptTo(Class<AdapterType> type) {
             if (type != ValueMap.class) {
                 return super.adaptTo(type);
